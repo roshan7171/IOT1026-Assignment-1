@@ -40,6 +40,9 @@
     {
         static void Main()
         {
+            int myVariable = 10;
+                System.Console.WriteLine("Hello World");
+        System.Console.WriteLine("another line");
             /*
             const int Min = 0;
             const int Max = 10;
@@ -62,3 +65,10 @@
         }
     }
 }
+
+
+
+
+
+
+
