@@ -21,7 +21,11 @@
         /// <returns>The user input as an integer</returns>
         public static int AskForNumber(string text)
         {
-            throw new NotImplementedException(); // Delete this after implemented the method
+            Console.Write(text);
+            string userInput = Console.ReadLine(); // Needs work -> try/catch + loop or Int.TryParse + loop
+            int number = Convert.ToInt32(userInput);
+            Console.Write(number);
+            return number;
         }
 
         /// <summary>
@@ -42,6 +46,7 @@
     {
         static void Main()
         {
+            ArrayReplicator.AskForNumber("Test: ");
             /*
             const int Min = 0;
             const int Max = 10;
