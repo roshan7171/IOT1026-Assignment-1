@@ -63,14 +63,12 @@
             int size = ArrayReplicator.AskForNumber("Enter the array size: ", Min, Max);
             int[] original = new int[size];
 
-            // Fill the original array with user specified integers
             for (int item = 0; item < size; ++item)
             {
                 original[item] = ArrayReplicator.AskForNumber("Enter a number: ");
             }
 
             int[] copy = ArrayReplicator.ReplicateArray(original);
-            // Verify original and replicated array are the same
             for (int index = 0; index < size; ++index)
                 Console.WriteLine($"Original {original[index],-PrintOffset}  {copy[index],4} Copy");
         }
